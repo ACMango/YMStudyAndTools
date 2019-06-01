@@ -19,6 +19,10 @@
 		1161F42B229D617A004AB76B /* YMToolsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F42A229D617A004AB76B /* YMToolsVC.m */; };
 		1161F433229D67FC004AB76B /* HitTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F431229D67FC004AB76B /* HitTestVC.m */; };
 		1161F434229D67FC004AB76B /* HitTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1161F432229D67FC004AB76B /* HitTestVC.xib */; };
+		246DF26722A24A90000E371A /* ViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DF26622A24A90000E371A /* ViewA.m */; };
+		246DF26A22A24A9A000E371A /* ViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DF26922A24A9A000E371A /* ViewB.m */; };
+		246DF26D22A24AAA000E371A /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DF26C22A24AAA000E371A /* ViewC.m */; };
+		246DF27022A24AB6000E371A /* ViewD.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DF26F22A24AB6000E371A /* ViewD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,14 @@
 		1161F430229D67FC004AB76B /* HitTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestVC.h; sourceTree = "<group>"; };
 		1161F431229D67FC004AB76B /* HitTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestVC.m; sourceTree = "<group>"; };
 		1161F432229D67FC004AB76B /* HitTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitTestVC.xib; sourceTree = "<group>"; };
+		246DF26522A24A90000E371A /* ViewA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewA.h; sourceTree = "<group>"; };
+		246DF26622A24A90000E371A /* ViewA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewA.m; sourceTree = "<group>"; };
+		246DF26822A24A9A000E371A /* ViewB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewB.h; sourceTree = "<group>"; };
+		246DF26922A24A9A000E371A /* ViewB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewB.m; sourceTree = "<group>"; };
+		246DF26B22A24AAA000E371A /* ViewC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewC.h; sourceTree = "<group>"; };
+		246DF26C22A24AAA000E371A /* ViewC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewC.m; sourceTree = "<group>"; };
+		246DF26E22A24AB6000E371A /* ViewD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewD.h; sourceTree = "<group>"; };
+		246DF26F22A24AB6000E371A /* ViewD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +174,14 @@
 				1161F430229D67FC004AB76B /* HitTestVC.h */,
 				1161F431229D67FC004AB76B /* HitTestVC.m */,
 				1161F432229D67FC004AB76B /* HitTestVC.xib */,
+				246DF26522A24A90000E371A /* ViewA.h */,
+				246DF26622A24A90000E371A /* ViewA.m */,
+				246DF26822A24A9A000E371A /* ViewB.h */,
+				246DF26922A24A9A000E371A /* ViewB.m */,
+				246DF26B22A24AAA000E371A /* ViewC.h */,
+				246DF26C22A24AAA000E371A /* ViewC.m */,
+				246DF26E22A24AB6000E371A /* ViewD.h */,
+				246DF26F22A24AB6000E371A /* ViewD.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -297,12 +317,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				246DF26D22A24AAA000E371A /* ViewC.m in Sources */,
 				1161F42B229D617A004AB76B /* YMToolsVC.m in Sources */,
+				246DF26722A24A90000E371A /* ViewA.m in Sources */,
 				1161F3F8229D5C81004AB76B /* ViewController.m in Sources */,
 				1161F433229D67FC004AB76B /* HitTestVC.m in Sources */,
+				246DF27022A24AB6000E371A /* ViewD.m in Sources */,
 				1161F403229D5C83004AB76B /* main.m in Sources */,
 				1161F3F5229D5C81004AB76B /* AppDelegate.m in Sources */,
 				1161F428229D614D004AB76B /* YMTools.m in Sources */,
+				246DF26A22A24A9A000E371A /* ViewB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
