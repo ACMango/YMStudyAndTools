@@ -19,6 +19,10 @@
 		1161F42B229D617A004AB76B /* YMToolsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F42A229D617A004AB76B /* YMToolsVC.m */; };
 		1161F433229D67FC004AB76B /* HitTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F431229D67FC004AB76B /* HitTestVC.m */; };
 		1161F434229D67FC004AB76B /* HitTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1161F432229D67FC004AB76B /* HitTestVC.xib */; };
+		241786BA22A40F2200465021 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241786B922A40F2200465021 /* XibViewController.m */; };
+		241786C022A40F6C00465021 /* XibBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241786BF22A40F6C00465021 /* XibBottomView.m */; };
+		241786C222A40F7D00465021 /* XibBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241786C122A40F7D00465021 /* XibBottomView.xib */; };
+		241786C622A42BFA00465021 /* ExtendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 241786C522A42BFA00465021 /* ExtendBtn.m */; };
 		246DF26722A24A90000E371A /* ViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DF26622A24A90000E371A /* ViewA.m */; };
 		246DF26A22A24A9A000E371A /* ViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DF26922A24A9A000E371A /* ViewB.m */; };
 		246DF26D22A24AAA000E371A /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 246DF26C22A24AAA000E371A /* ViewC.m */; };
@@ -66,6 +70,14 @@
 		1161F430229D67FC004AB76B /* HitTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestVC.h; sourceTree = "<group>"; };
 		1161F431229D67FC004AB76B /* HitTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestVC.m; sourceTree = "<group>"; };
 		1161F432229D67FC004AB76B /* HitTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitTestVC.xib; sourceTree = "<group>"; };
+		241786B822A40F2200465021 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
+		241786B922A40F2200465021 /* XibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
+		241786BE22A40F6C00465021 /* XibBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibBottomView.h; sourceTree = "<group>"; };
+		241786BF22A40F6C00465021 /* XibBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibBottomView.m; sourceTree = "<group>"; };
+		241786C122A40F7D00465021 /* XibBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibBottomView.xib; sourceTree = "<group>"; };
+		241786C322A412A600465021 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		241786C422A42BFA00465021 /* ExtendBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtendBtn.h; sourceTree = "<group>"; };
+		241786C522A42BFA00465021 /* ExtendBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtendBtn.m; sourceTree = "<group>"; };
 		246DF26522A24A90000E371A /* ViewA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewA.h; sourceTree = "<group>"; };
 		246DF26622A24A90000E371A /* ViewA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewA.m; sourceTree = "<group>"; };
 		246DF26822A24A9A000E371A /* ViewB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewB.h; sourceTree = "<group>"; };
@@ -135,6 +147,7 @@
 				1161F3FE229D5C83004AB76B /* LaunchScreen.storyboard */,
 				1161F401229D5C83004AB76B /* Info.plist */,
 				1161F402229D5C83004AB76B /* main.m */,
+				241786C322A412A600465021 /* PrefixHeader.pch */,
 			);
 			path = StudyAndTools;
 			sourceTree = "<group>";
@@ -171,6 +184,15 @@
 		1161F42C229D64C0004AB76B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				241786B722A40EB500465021 /* XibView */,
+				241786B622A40EA600465021 /* HitTest */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		241786B622A40EA600465021 /* HitTest */ = {
+			isa = PBXGroup;
+			children = (
 				1161F430229D67FC004AB76B /* HitTestVC.h */,
 				1161F431229D67FC004AB76B /* HitTestVC.m */,
 				1161F432229D67FC004AB76B /* HitTestVC.xib */,
@@ -183,7 +205,21 @@
 				246DF26E22A24AB6000E371A /* ViewD.h */,
 				246DF26F22A24AB6000E371A /* ViewD.m */,
 			);
-			name = Controllers;
+			name = HitTest;
+			sourceTree = "<group>";
+		};
+		241786B722A40EB500465021 /* XibView */ = {
+			isa = PBXGroup;
+			children = (
+				241786B822A40F2200465021 /* XibViewController.h */,
+				241786B922A40F2200465021 /* XibViewController.m */,
+				241786BE22A40F6C00465021 /* XibBottomView.h */,
+				241786BF22A40F6C00465021 /* XibBottomView.m */,
+				241786C122A40F7D00465021 /* XibBottomView.xib */,
+				241786C422A42BFA00465021 /* ExtendBtn.h */,
+				241786C522A42BFA00465021 /* ExtendBtn.m */,
+			);
+			path = XibView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +327,7 @@
 			files = (
 				1161F434229D67FC004AB76B /* HitTestVC.xib in Resources */,
 				1161F400229D5C83004AB76B /* LaunchScreen.storyboard in Resources */,
+				241786C222A40F7D00465021 /* XibBottomView.xib in Resources */,
 				1161F3FD229D5C83004AB76B /* Assets.xcassets in Resources */,
 				1161F3FB229D5C81004AB76B /* Main.storyboard in Resources */,
 			);
@@ -318,11 +355,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				246DF26D22A24AAA000E371A /* ViewC.m in Sources */,
+				241786C022A40F6C00465021 /* XibBottomView.m in Sources */,
+				241786BA22A40F2200465021 /* XibViewController.m in Sources */,
 				1161F42B229D617A004AB76B /* YMToolsVC.m in Sources */,
 				246DF26722A24A90000E371A /* ViewA.m in Sources */,
 				1161F3F8229D5C81004AB76B /* ViewController.m in Sources */,
 				1161F433229D67FC004AB76B /* HitTestVC.m in Sources */,
 				246DF27022A24AB6000E371A /* ViewD.m in Sources */,
+				241786C622A42BFA00465021 /* ExtendBtn.m in Sources */,
 				1161F403229D5C83004AB76B /* main.m in Sources */,
 				1161F3F5229D5C81004AB76B /* AppDelegate.m in Sources */,
 				1161F428229D614D004AB76B /* YMTools.m in Sources */,
@@ -499,6 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G94ZSG2Y96;
+				GCC_PREFIX_HEADER = $SRCROOT/StudyAndTools/PrefixHeader.pch;
 				INFOPLIST_FILE = StudyAndTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -517,6 +558,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G94ZSG2Y96;
+				GCC_PREFIX_HEADER = $SRCROOT/StudyAndTools/PrefixHeader.pch;
 				INFOPLIST_FILE = StudyAndTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

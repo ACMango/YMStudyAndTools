@@ -62,6 +62,7 @@
         _dataArray = [NSMutableArray array];
         [_dataArray addObject:@"YMToolsVC"]; // 工具展示类
         [_dataArray addObject:@"HitTestVC"]; // 事件响应链
+        [_dataArray addObject:@"XibViewController"]; // Xib
     }
     return _dataArray;
 }
