@@ -42,18 +42,35 @@
                         <action selector="centerBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="aIz-Zz-iMw"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3q-K7-YVW" customClass="AButton">
+                    <rect key="frame" x="0.0" y="253" width="76" height="77"/>
+                    <color key="backgroundColor" red="0.62315921399999996" green="0.64487946900000004" blue="0.96930998560000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="Dnz-U8-bZU"/>
+                        <constraint firstAttribute="width" constant="76" id="jUh-t4-hfW"/>
+                    </constraints>
+                    <state key="normal" title="A"/>
+                    <connections>
+                        <action selector="aViewClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="nUa-XW-cDY"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.46750678499999998" blue="0.5955260725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="M7w-Xh-ncz" secondAttribute="bottom" constant="19" id="1bb-PB-vJh"/>
                 <constraint firstItem="WFn-HM-hgB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7LF-Wq-FqZ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="M7w-Xh-ncz" secondAttribute="trailing" constant="16" id="Qpx-TR-R8Q"/>
+                <constraint firstItem="o3q-K7-YVW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Uv8-FZ-Msm"/>
                 <constraint firstItem="FfQ-bC-UIO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bBp-5q-cbe"/>
+                <constraint firstAttribute="bottom" secondItem="o3q-K7-YVW" secondAttribute="bottom" constant="-30" id="j6c-YM-koD"/>
                 <constraint firstItem="WFn-HM-hgB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="v4p-lY-h81"/>
                 <constraint firstItem="FfQ-bC-UIO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wZe-KM-rzq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="aBtn" destination="o3q-K7-YVW" id="TQF-uM-CcE"/>
+            </connections>
             <point key="canvasLocation" x="63.75" y="67.5"/>
         </view>
     </objects>

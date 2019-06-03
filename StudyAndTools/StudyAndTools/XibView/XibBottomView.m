@@ -7,6 +7,7 @@
 //
 
 #import "XibBottomView.h"
+#import "AButton.h"
 
 @implementation XibBottomView
 
@@ -29,5 +30,28 @@
     
     NSLog(@"CenterBtn Clicked");
 }
+
+- (IBAction)aViewClicked:(UIButton *)sender {
+    
+    NSLog(@"A_ViewClicked");
+}
+
+#pragma mark - events 传递
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    
+//    NSLog(@"self point:%@", NSStringFromCGPoint(point));
+    CGPoint aBtnPoint = [self convertPoint:point toView:self.aBtn];
+//    NSLog(@"AButton Point%@", NSStringFromCGPoint(aBtnPoint));
+    
+    if ([self.aBtn pointInside:aBtnPoint withEvent:event]) {
+        return self.aBtn;
+    }
+    
+    // Others
+    UIView *hitView = [super hitTest:point withEvent:event];
+    NSLog(@"%@__%@", NSStringFromClass([self class]), hitView);
+    return hitView;
+}
+
 
 @end
