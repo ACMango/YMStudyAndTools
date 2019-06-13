@@ -10,10 +10,6 @@
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
-@property (strong, nonatomic) NSMutableArray *dataArray;
-
 @end
 
 @implementation ViewController
@@ -22,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.rowHeight = 55.0;
+    [self.view addSubview:_tableView];
 }
 
 #pragma mark - tableView DataSource
@@ -53,18 +54,6 @@
         nextPushVC.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:nextController animated:YES];
     }
-}
-
-#pragma mark - getter
-- (NSMutableArray *)dataArray {
-    
-    if (!_dataArray) {
-        _dataArray = [NSMutableArray array];
-        [_dataArray addObject:@"YMToolsVC"]; // 工具展示类
-        [_dataArray addObject:@"HitTestVC"]; // 事件响应链
-        [_dataArray addObject:@"XibViewController"]; // Xib
-    }
-    return _dataArray;
 }
 
 @end

@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) NSMutableArray *dataArray;
+@property (strong, nonatomic) UITableView *tableView;
 
 @end
 

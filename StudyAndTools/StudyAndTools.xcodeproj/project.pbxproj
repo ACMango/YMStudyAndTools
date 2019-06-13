@@ -19,6 +19,8 @@
 		1161F42B229D617A004AB76B /* YMToolsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F42A229D617A004AB76B /* YMToolsVC.m */; };
 		1161F433229D67FC004AB76B /* HitTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F431229D67FC004AB76B /* HitTestVC.m */; };
 		1161F434229D67FC004AB76B /* HitTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1161F432229D67FC004AB76B /* HitTestVC.xib */; };
+		1188A39522B26F4D00A17FEE /* ToolsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1188A39422B26F4D00A17FEE /* ToolsController.m */; };
+		1188A39822B26FA800A17FEE /* StudyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1188A39722B26FA800A17FEE /* StudyController.m */; };
 		11F718BF22A5193800D8A4B2 /* AButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F718BE22A5193800D8A4B2 /* AButton.m */; };
 		241786BA22A40F2200465021 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241786B922A40F2200465021 /* XibViewController.m */; };
 		241786C022A40F6C00465021 /* XibBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241786BF22A40F6C00465021 /* XibBottomView.m */; };
@@ -71,6 +73,10 @@
 		1161F430229D67FC004AB76B /* HitTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestVC.h; sourceTree = "<group>"; };
 		1161F431229D67FC004AB76B /* HitTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestVC.m; sourceTree = "<group>"; };
 		1161F432229D67FC004AB76B /* HitTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitTestVC.xib; sourceTree = "<group>"; };
+		1188A39322B26F4D00A17FEE /* ToolsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsController.h; sourceTree = "<group>"; };
+		1188A39422B26F4D00A17FEE /* ToolsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsController.m; sourceTree = "<group>"; };
+		1188A39622B26FA800A17FEE /* StudyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyController.h; sourceTree = "<group>"; };
+		1188A39722B26FA800A17FEE /* StudyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyController.m; sourceTree = "<group>"; };
 		11F718BD22A5193800D8A4B2 /* AButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AButton.h; sourceTree = "<group>"; };
 		11F718BE22A5193800D8A4B2 /* AButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AButton.m; sourceTree = "<group>"; };
 		241786B822A40F2200465021 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
@@ -143,6 +149,10 @@
 				1161F425229D6128004AB76B /* CommonTools */,
 				1161F3F3229D5C81004AB76B /* AppDelegate.h */,
 				1161F3F4229D5C81004AB76B /* AppDelegate.m */,
+				1188A39622B26FA800A17FEE /* StudyController.h */,
+				1188A39722B26FA800A17FEE /* StudyController.m */,
+				1188A39322B26F4D00A17FEE /* ToolsController.h */,
+				1188A39422B26F4D00A17FEE /* ToolsController.m */,
 				1161F3F6229D5C81004AB76B /* ViewController.h */,
 				1161F3F7229D5C81004AB76B /* ViewController.m */,
 				1161F3F9229D5C81004AB76B /* Main.storyboard */,
@@ -368,8 +378,10 @@
 				1161F433229D67FC004AB76B /* HitTestVC.m in Sources */,
 				246DF27022A24AB6000E371A /* ViewD.m in Sources */,
 				241786C622A42BFA00465021 /* ExtendBtn.m in Sources */,
+				1188A39822B26FA800A17FEE /* StudyController.m in Sources */,
 				1161F403229D5C83004AB76B /* main.m in Sources */,
 				1161F3F5229D5C81004AB76B /* AppDelegate.m in Sources */,
+				1188A39522B26F4D00A17FEE /* ToolsController.m in Sources */,
 				1161F428229D614D004AB76B /* YMTools.m in Sources */,
 				246DF26A22A24A9A000E371A /* ViewB.m in Sources */,
 				11F718BF22A5193800D8A4B2 /* AButton.m in Sources */,
