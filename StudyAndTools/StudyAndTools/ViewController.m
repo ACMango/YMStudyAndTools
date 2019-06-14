@@ -46,11 +46,27 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    id nextController = [[NSClassFromString(_dataArray[indexPath.row]) alloc] init];
+    
+    NSString *controllerName = _dataArray[indexPath.row];
+    id nextController = nil;
+    
+    if ([controllerName hasPrefix:@"SB"]) {
+        
+        NSArray *componentsArr = [controllerName componentsSeparatedByString:@"_"];
+        if (componentsArr.count == 2) {
+            controllerName = componentsArr[1];
+            UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            nextController = [mainSB instantiateViewControllerWithIdentifier:controllerName];
+        }
+    } else { // 普通ViewController
+        
+        nextController = [[NSClassFromString(controllerName) alloc] init];
+    }
+    
     if ([nextController isKindOfClass:[UIViewController class]]) {
         
         UIViewController *nextPushVC = (UIViewController *)nextController;
-        nextPushVC.title = self.dataArray[indexPath.row];
+        nextPushVC.title = controllerName;
         nextPushVC.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:nextController animated:YES];
     }

@@ -21,7 +21,6 @@
     self.title = @"学习列表";
     
     self.dataArray = [NSMutableArray array];
-    [self.dataArray addObject:@"YMToolsVC"]; // 工具展示类
     [self.dataArray addObject:@"HitTestVC"]; // 事件响应链
     [self.dataArray addObject:@"XibViewController"]; // Xib
     

@@ -21,7 +21,7 @@
     self.title = @"工具列表";
     
     self.dataArray = [NSMutableArray array];
-    [self.dataArray addObject:@"666"];
+    [self.dataArray addObject:@"SB_TFAccessoryController"];
     
     [self.tableView reloadData];
 }

@@ -43,6 +43,37 @@
             </objects>
             <point key="canvasLocation" x="139" y="-168"/>
         </scene>
+        <!--Accessory Controller-->
+        <scene sceneID="OYx-qd-ozd">
+            <objects>
+                <viewController storyboardIdentifier="TFAccessoryController" id="Yf1-l6-nVL" customClass="TFAccessoryController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cNh-Us-5Pd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9jj-Lj-cfT">
+                                <rect key="frame" x="103.5" y="124" width="207" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9jj-Lj-cfT" firstAttribute="centerX" secondItem="cNh-Us-5Pd" secondAttribute="centerX" id="DuP-My-0aO"/>
+                            <constraint firstItem="9jj-Lj-cfT" firstAttribute="width" secondItem="cNh-Us-5Pd" secondAttribute="width" multiplier="0.5" id="LDb-II-cJH"/>
+                            <constraint firstItem="9jj-Lj-cfT" firstAttribute="top" secondItem="gNl-ZE-RdS" secondAttribute="top" constant="80" id="o7E-dL-IBv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gNl-ZE-RdS"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="9jj-Lj-cfT" id="H6z-Gv-klY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIV-UD-0OJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860.86956521739137" y="-168.08035714285714"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ICr-F4-bk5">
             <objects>
