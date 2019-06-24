@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1130FAB322B7B6F800C4E8E3 /* YMTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1130FAB222B7B6F800C4E8E3 /* YMTools.m */; };
 		1161F3F5229D5C81004AB76B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F3F4229D5C81004AB76B /* AppDelegate.m */; };
 		1161F3F8229D5C81004AB76B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F3F7229D5C81004AB76B /* ViewController.m */; };
 		1161F3FB229D5C81004AB76B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1161F3F9229D5C81004AB76B /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		1188A39822B26FA800A17FEE /* StudyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1188A39722B26FA800A17FEE /* StudyController.m */; };
 		1188A39B22B2784900A17FEE /* YMTFInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1188A39A22B2784900A17FEE /* YMTFInputAccessoryView.m */; };
 		1188A39E22B27B4A00A17FEE /* TFAccessoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1188A39D22B27B4A00A17FEE /* TFAccessoryController.m */; };
+		11D6E73622C0F960007908B2 /* SNInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D6E73422C0F960007908B2 /* SNInputTextView.m */; };
 		11F718BF22A5193800D8A4B2 /* AButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F718BE22A5193800D8A4B2 /* AButton.m */; };
 		241786BA22A40F2200465021 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241786B922A40F2200465021 /* XibViewController.m */; };
 		241786C022A40F6C00465021 /* XibBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241786BF22A40F6C00465021 /* XibBottomView.m */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1130FAB122B7B6F800C4E8E3 /* YMTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTools.h; sourceTree = "<group>"; };
+		1130FAB222B7B6F800C4E8E3 /* YMTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTools.m; sourceTree = "<group>"; };
 		1161F3F0229D5C81004AB76B /* StudyAndTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyAndTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1161F3F3229D5C81004AB76B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1161F3F4229D5C81004AB76B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		1188A39A22B2784900A17FEE /* YMTFInputAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTFInputAccessoryView.m; sourceTree = "<group>"; };
 		1188A39C22B27B4A00A17FEE /* TFAccessoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFAccessoryController.h; sourceTree = "<group>"; };
 		1188A39D22B27B4A00A17FEE /* TFAccessoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFAccessoryController.m; sourceTree = "<group>"; };
+		11D6E73422C0F960007908B2 /* SNInputTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNInputTextView.m; sourceTree = "<group>"; };
+		11D6E73522C0F960007908B2 /* SNInputTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNInputTextView.h; sourceTree = "<group>"; };
 		11F718BD22A5193800D8A4B2 /* AButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AButton.h; sourceTree = "<group>"; };
 		11F718BE22A5193800D8A4B2 /* AButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AButton.m; sourceTree = "<group>"; };
 		241786B822A40F2200465021 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
@@ -122,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1130FAB522B7B70D00C4E8E3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1130FAB122B7B6F800C4E8E3 /* YMTools.h */,
+				1130FAB222B7B6F800C4E8E3 /* YMTools.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
 		1161F3E7229D5C81004AB76B = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +201,9 @@
 		1161F425229D6128004AB76B /* CommonTools */ = {
 			isa = PBXGroup;
 			children = (
+				11D6E73722C0F96A007908B2 /* InputTextView */,
 				1188A39F22B27BD300A17FEE /* TextFieldInputAccessoryView */,
+				1130FAB522B7B70D00C4E8E3 /* Tools */,
 			);
 			name = CommonTools;
 			sourceTree = "<group>";
@@ -209,6 +226,15 @@
 				1188A39D22B27B4A00A17FEE /* TFAccessoryController.m */,
 			);
 			name = TextFieldInputAccessoryView;
+			sourceTree = "<group>";
+		};
+		11D6E73722C0F96A007908B2 /* InputTextView */ = {
+			isa = PBXGroup;
+			children = (
+				11D6E73522C0F960007908B2 /* SNInputTextView.h */,
+				11D6E73422C0F960007908B2 /* SNInputTextView.m */,
+			);
+			name = InputTextView;
 			sourceTree = "<group>";
 		};
 		241786B622A40EA600465021 /* HitTest */ = {
@@ -379,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				246DF26D22A24AAA000E371A /* ViewC.m in Sources */,
+				1130FAB322B7B6F800C4E8E3 /* YMTools.m in Sources */,
 				241786C022A40F6C00465021 /* XibBottomView.m in Sources */,
 				241786BA22A40F2200465021 /* XibViewController.m in Sources */,
 				246DF26722A24A90000E371A /* ViewA.m in Sources */,
@@ -388,6 +415,7 @@
 				241786C622A42BFA00465021 /* ExtendBtn.m in Sources */,
 				1188A39822B26FA800A17FEE /* StudyController.m in Sources */,
 				1161F403229D5C83004AB76B /* main.m in Sources */,
+				11D6E73622C0F960007908B2 /* SNInputTextView.m in Sources */,
 				1161F3F5229D5C81004AB76B /* AppDelegate.m in Sources */,
 				1188A39522B26F4D00A17FEE /* ToolsController.m in Sources */,
 				1188A39E22B27B4A00A17FEE /* TFAccessoryController.m in Sources */,
