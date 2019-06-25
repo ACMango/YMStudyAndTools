@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YMInputTextView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFc-fD-Jto">
+                    <rect key="frame" x="10" y="12" width="55" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="32o-P8-ApE"/>
+                        <constraint firstAttribute="height" constant="28" id="IrC-xV-QZw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.50197076797485352" green="0.50195783376693726" blue="0.50195646286010742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="ScX-gj-EMF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPP-GM-eB4">
+                    <rect key="frame" x="350" y="137" width="54" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="0/100❌">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="checkButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="xcd-jn-r34"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkD-K2-Key">
+                    <rect key="frame" x="349" y="12" width="55" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="发布"/>
+                    <connections>
+                        <action selector="confirmButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="twj-F2-cAI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPt-DM-82w" userLabel="PlaceholderL">
+                    <rect key="frame" x="15" y="56" width="389" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.50197076799999996" green="0.50195783380000003" blue="0.50195646289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jX4-x3-hfC">
+                    <rect key="frame" x="10" y="48" width="394" height="79"/>
+                    <color key="backgroundColor" red="0.89021295310000004" green="0.890190959" blue="0.89018875360000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="79" id="Fh7-o6-1yO"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="天来天气晴朗，阳光无比灿烂，关于高考的话题更是热火朝天。">
+                            <attributes>
+                                <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" lineHeightMultiple="1" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="6 ">
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" lineHeightMultiple="1" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="月">
+                            <attributes>
+                                <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" lineHeightMultiple="1" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" 23 ">
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" lineHeightMultiple="1" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="日，是广西高考成绩公布的日子，随后也传来南宁市第二中学的杨晨煜高考理科取得">
+                            <attributes>
+                                <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" lineHeightMultiple="1" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" 730 ">
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" lineHeightMultiple="1" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="分的惊人成绩，更惊人的是他的英语、数学都得了满分，试问这样的分数，谁不心服口服，这是怎么做到的？">
+                            <attributes>
+                                <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" lineHeightMultiple="1" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UkD-K2-Key" secondAttribute="trailing" constant="10" id="1lY-Mq-v9X"/>
+                <constraint firstItem="OPP-GM-eB4" firstAttribute="trailing" secondItem="jX4-x3-hfC" secondAttribute="trailing" id="2MX-Nc-sw3"/>
+                <constraint firstItem="jX4-x3-hfC" firstAttribute="trailing" secondItem="UkD-K2-Key" secondAttribute="trailing" id="2eZ-5d-FeS"/>
+                <constraint firstItem="OPP-GM-eB4" firstAttribute="top" secondItem="jX4-x3-hfC" secondAttribute="bottom" constant="10" id="8Bs-hb-HJG"/>
+                <constraint firstItem="gFc-fD-Jto" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="A0B-RT-WXg"/>
+                <constraint firstItem="SPt-DM-82w" firstAttribute="trailing" secondItem="jX4-x3-hfC" secondAttribute="trailing" id="Kqa-Fk-yHD"/>
+                <constraint firstItem="UkD-K2-Key" firstAttribute="centerY" secondItem="gFc-fD-Jto" secondAttribute="centerY" id="Mqk-Hy-qY7"/>
+                <constraint firstItem="UkD-K2-Key" firstAttribute="height" secondItem="gFc-fD-Jto" secondAttribute="height" id="NoL-1J-olt"/>
+                <constraint firstItem="jX4-x3-hfC" firstAttribute="leading" secondItem="gFc-fD-Jto" secondAttribute="leading" id="X2O-fF-tnN"/>
+                <constraint firstItem="SPt-DM-82w" firstAttribute="top" secondItem="jX4-x3-hfC" secondAttribute="top" constant="8" id="Zno-DO-edU"/>
+                <constraint firstItem="UkD-K2-Key" firstAttribute="width" secondItem="gFc-fD-Jto" secondAttribute="width" id="f3d-v1-Ha2"/>
+                <constraint firstItem="gFc-fD-Jto" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="llV-wJ-eMN"/>
+                <constraint firstItem="SPt-DM-82w" firstAttribute="leading" secondItem="jX4-x3-hfC" secondAttribute="leading" constant="5" id="qKu-Im-obw"/>
+                <constraint firstItem="jX4-x3-hfC" firstAttribute="top" secondItem="gFc-fD-Jto" secondAttribute="bottom" constant="8" id="spc-NN-JUe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cancelBtn" destination="gFc-fD-Jto" id="ey8-Jz-dbz"/>
+                <outlet property="checkBtn" destination="OPP-GM-eB4" id="M4A-ML-gV0"/>
+                <outlet property="confirmBtn" destination="UkD-K2-Key" id="pga-wN-Bp4"/>
+                <outlet property="placeholderL" destination="SPt-DM-82w" id="bTh-TN-xHF"/>
+                <outlet property="textView" destination="jX4-x3-hfC" id="3AK-Yl-d8l"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="322.76785714285711"/>
+        </view>
+    </objects>
+</document>

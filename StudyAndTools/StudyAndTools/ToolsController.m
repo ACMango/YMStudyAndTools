@@ -22,6 +22,7 @@
     
     self.dataArray = [NSMutableArray array];
     [self.dataArray addObject:@"SB_TFAccessoryController"];
+    [self.dataArray addObject:@"YMInputTextViewContoller"];
     
     [self.tableView reloadData];
 }
