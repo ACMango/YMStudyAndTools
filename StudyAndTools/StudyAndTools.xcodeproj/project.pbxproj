@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1130FAB322B7B6F800C4E8E3 /* YMTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1130FAB222B7B6F800C4E8E3 /* YMTools.m */; };
+		115E65062366FF660051F3DF /* UIButton+YMExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E65052366FF660051F3DF /* UIButton+YMExtend.m */; };
 		1161F3F5229D5C81004AB76B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F3F4229D5C81004AB76B /* AppDelegate.m */; };
 		1161F3F8229D5C81004AB76B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161F3F7229D5C81004AB76B /* ViewController.m */; };
 		1161F3FB229D5C81004AB76B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1161F3F9229D5C81004AB76B /* Main.storyboard */; };
@@ -56,6 +57,8 @@
 /* Begin PBXFileReference section */
 		1130FAB122B7B6F800C4E8E3 /* YMTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTools.h; sourceTree = "<group>"; };
 		1130FAB222B7B6F800C4E8E3 /* YMTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTools.m; sourceTree = "<group>"; };
+		115E65042366FF660051F3DF /* UIButton+YMExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+YMExtend.h"; sourceTree = "<group>"; };
+		115E65052366FF660051F3DF /* UIButton+YMExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YMExtend.m"; sourceTree = "<group>"; };
 		1161F3F0229D5C81004AB76B /* StudyAndTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyAndTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1161F3F3229D5C81004AB76B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1161F3F4229D5C81004AB76B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -142,6 +145,15 @@
 			name = Tools;
 			sourceTree = "<group>";
 		};
+		115E65032366FF4E0051F3DF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				115E65042366FF660051F3DF /* UIButton+YMExtend.h */,
+				115E65052366FF660051F3DF /* UIButton+YMExtend.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		1161F3E7229D5C81004AB76B = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +218,7 @@
 		1161F425229D6128004AB76B /* CommonTools */ = {
 			isa = PBXGroup;
 			children = (
+				115E65032366FF4E0051F3DF /* Category */,
 				11D6E73722C0F96A007908B2 /* InputTextView */,
 				1188A39F22B27BD300A17FEE /* TextFieldInputAccessoryView */,
 				1130FAB522B7B70D00C4E8E3 /* Tools */,
@@ -430,6 +443,7 @@
 				11A10DA922C1AAF200FFCA16 /* YMInputTextView.m in Sources */,
 				1188A39E22B27B4A00A17FEE /* TFAccessoryController.m in Sources */,
 				1188A39B22B2784900A17FEE /* YMTFInputAccessoryView.m in Sources */,
+				115E65062366FF660051F3DF /* UIButton+YMExtend.m in Sources */,
 				246DF26A22A24A9A000E371A /* ViewB.m in Sources */,
 				11F718BF22A5193800D8A4B2 /* AButton.m in Sources */,
 			);

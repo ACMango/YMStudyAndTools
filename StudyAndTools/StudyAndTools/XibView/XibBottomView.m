@@ -8,6 +8,7 @@
 
 #import "XibBottomView.h"
 #import "AButton.h"
+#import "UIButton+YMExtend.h"
 
 @implementation XibBottomView
 
@@ -29,6 +30,7 @@
 - (IBAction)centerBtnClicked:(UIButton *)sender {
     
     NSLog(@"CenterBtn Clicked");
+    [sender enableDelayTime:1.2]; // y
 }
 
 - (IBAction)aViewClicked:(UIButton *)sender {
@@ -49,7 +51,7 @@
     
     // Others
     UIView *hitView = [super hitTest:point withEvent:event];
-    NSLog(@"%@__%@", NSStringFromClass([self class]), hitView);
+//    NSLog(@"%@__%@", NSStringFromClass([self class]), hitView);
     return hitView;
 }
 
